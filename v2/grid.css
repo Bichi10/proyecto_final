@@ -1,0 +1,59 @@
+#grilla {
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "nav productos productos aside"
+        "nav cuentaregresiva cuentaregresiva  aside"
+        "footer footer footer footer";
+
+    grid-template-rows: 20px 1fr 1fr 60px;
+    grid-column: 20% 50% 50% 20%;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    height: 100vh;
+}
+
+
+.border {
+    border: 1px solid black;
+}
+
+header {
+    background-color: blueviolet;
+    grid-area: header;
+}
+
+
+aside{
+    background-color: gold;
+    grid-area: aside;
+}
+section#productos {
+    background-color: aquamarine;
+    grid-area: productos;
+    width: 100%;
+}
+
+section#cuentaregresiva{
+    background-color: rgb(137, 203, 238);
+    grid-area: cuentaregresiva;
+}
+
+nav {
+    background-color: white;
+    grid-area: nav;
+    background-image: url(./img/fondo_mundial_lateral2.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+footer {
+    background-color: red;
+    grid-area: footer;
+}
+
+/*publicidad {
+    background-color: rgb(34, 30, 9);
+    grid-area: publicidad;
+}*/

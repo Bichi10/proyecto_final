@@ -1,0 +1,240 @@
+/*normalizador*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.menuSuperior {
+    color: aqua;
+    text-align: center;
+
+}
+
+.encabezado {
+    background-color: brown;
+}
+
+/*.menuSuperior li {
+    color: rgb(90, 201, 39);
+    margin-left: 0px;
+}*/
+
+.tabla{
+    border: solid 1px;
+    background-color: brown;
+}
+.tabla th{
+    border: solid 1px;
+    background-color: blue;
+}
+.tabla tr td{
+    border: solid 1px;
+    background-color: beige;
+}
+
+
+#cuentaregresiva{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: chocolate;
+}
+
+/*clase para las cajas*/
+.simply-section{
+background: rgb(9, 133, 133);
+width: 150px;
+height: 150px;
+margin: 20px 50px;
+border-radius: 5px;
+display: flex;
+align-items: center; /*centro de forma vertical*/
+justify-content: center; /*centro de forma horizontal*/
+}
+
+/* tuneando los numeros*/
+.simply-amount{
+display: block;
+font-size: 30px;
+font-weight: 700;
+align-items: center;
+}
+
+/* tuneando las letras*/
+.simply-word{
+font-weight: 300px ;
+font-size: 30px;
+}
+.contenedor{
+    display: flex;
+
+}
+
+.contenido{
+    background-color: rgb(234, 181, 181);
+    padding: 1rem;
+    width: 50%;
+}
+.contenido_texto{
+    background-color: rgb(44, 128, 153);
+    width: 80%;
+}
+.contenido__personajes{
+    padding: 1rem;
+    align-items: baseline;
+    text-align: center;
+}
+
+.contenido__texto{
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+}
+.contenedor_mundiales{
+    display: flex;
+    border: solid 1px ;
+    background-color: chartreuse;
+    
+}
+.contenido__imagen_mundiales{
+    background-color: aqua;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+   /* display: inline-block; */
+    margin: 0 20px 0 60px;
+}
+.contenido_texto_mundial{
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    margin-bottom: 70px;
+}
+.contenido__imagen_mundiales:hover contenido__texto{
+    background-color: black;
+}
+
+.contenido__imagen{
+    width: 20%;
+
+}
+.contenido__imagen_mundiales img{
+    width: 50%;   
+    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px rgba(107, 107, 107, 0.514);
+    border-radius: 10px;
+}
+
+    /* Formulario */
+    .formulario_sec{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .formulario{
+        padding: 4rem;
+        margin: 2rem;
+        background-color: #E7E7E7;
+        border-radius: 5px;
+    }
+
+    .formulario input, .formulario textarea, .formulario select{
+        margin-bottom: 1.5rem;
+        width: 100%;
+        padding: 1rem;
+    }
+    .field, legend{
+        border: none;
+        width: 100%;
+        text-align: center;
+    }
+    .field1{
+        border: none;
+    }
+
+    .field, input{
+        margin: 0px 0px 10px 0px;
+        
+    }
+    .checkbox{
+        display: flex;
+    
+    }
+    .checkbox input{
+        width: 5%;
+    }
+
+    .boton_enviar{
+        background-color: aqua;
+        border-color: aqua;
+        border-radius: 4px;
+    }
+    .boton_enviar:hover{
+        background-color: blueviolet;
+        border: 2px solid;
+        border-color:blueviolet;
+    }
+    
+    /* Pseudoclases */
+    a:hover{  background-color:blue; color:white; text-decoration:underline; }
+    a:link{ text-decoration:none; color:red; }
+    a:visited{ color:#999999; }
+    a:active{ background-color:yellow; color:black; }
+
+/* TABLETAS */
+@media(min-width:768px){
+    body{
+        background-color: cadetblue;
+    }
+    .encabezado{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgb(225, 186, 135);
+    }
+    .contenido__imagen_mundiales div{
+        width: 30%;
+        background-color: brown;
+    }
+    .contenido__imagen_mundiales img{
+        width: 90%;
+        background-color: darkcyan;
+    }
+    .comunidad{
+        display: flex;
+    }  
+    .agregado{
+        display: block;
+    }
+
+
+}
+
+@media(min-width:768px) and (max-width:1024px){
+    .tienda{
+        text-align: left;
+    }
+
+}
+
+/* ESCRITORIOS NORMALES */
+
+@media(min-width:992px){
+    .tienda{
+        flex-wrap: nowrap;
+    }
+}
+
+/* PATNTALLAS GRANDES */
+@media(min-width:1200px){
+    body{
+        background-color: chocolate;
+    }
+  
+}
