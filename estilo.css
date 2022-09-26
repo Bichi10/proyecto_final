@@ -6,6 +6,10 @@
     color: black;
 }
 
+.iconAuthContainer img{
+    width:20px;
+}   
+
 .menuSuperior {
     color: aqua;
     text-align: center;
@@ -39,15 +43,15 @@
     padding-top: 40px;
     display: flex;
     justify-content: center;
-    background-color: chocolate;
+ /*background-color: chocolate;*/
 }
 
 /*clase para las cajas*/
 .simply-section{
 background: rgb(9, 133, 133);
-width: 150px;
-height: 150px;
-margin: 20px 50px;
+width: 100px;
+height: 100px;
+margin: 20px 15px;
 border-radius: 5px;
 display: flex;
 align-items: center; /*centro de forma vertical*/
@@ -64,8 +68,8 @@ align-items: center;
 
 /* tuneando las letras*/
 .simply-word{
-font-weight: 300px ;
-font-size: 30px;
+font-weight: 150px ;
+font-size: 20px;
 }
 .contenedor{
     display: flex;
@@ -178,9 +182,9 @@ font-size: 30px;
         border-radius: 4px;
     }
     .boton_enviar:hover{
-        background-color: blueviolet;
+        background-color: rgb(71, 128, 123);
         border: 2px solid;
-        border-color:blueviolet;
+        border-color:rgb(165, 116, 211);
     }
     
     /* Pseudoclases */
@@ -191,8 +195,8 @@ font-size: 30px;
 
 /*celus*/
 @media(max-width:769px){
-    footer{
-        display:none;
+    /*footer{
+        display:none;*/
 }
 
 /* TABLETAS */

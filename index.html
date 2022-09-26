@@ -7,7 +7,6 @@
 
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./estilo.css">
-    <link rel="stylesheet" href="./style.css">
     <title>Qatar 2022</title>
 </head>
 
@@ -21,7 +20,7 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item ">
-                <a class="nav-link active text-light text-center" aria-current="page" href="./mundiales2.html">Historia de Mundiales</a>
+                <a class="nav-link active text-light text-center" aria-current="page" href="./gruposmundial.html">Grupos Mundial Qatar 22</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-light text-center" href="./mundiales.html">mundiales tabla</a>
@@ -41,12 +40,12 @@
                 </button>
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
                     <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Noticias del Mundial</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h3 class="modal-title" id="exampleModalLabel"  width="100%"> Noticias del Mundial</h3>
+                        <!--<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
                         </div>
                         <div class="modal-body">
                           <section class="formulario_sec">
@@ -65,20 +64,20 @@
                                         maxlength="40"></textarea><br>
             
                                     <!-- Menu desplegable -->
-                                    <label for="talle">Datos de Partidos</label>
-                                    <select name="talle" id="talle">
-                                        <option value="a"> Alineaciones</option>
-                                        <option value="hc"> Hora de comienzo</option>
-                                        <option value="rf"> Resultado Final</option>
+                                    <label for="notificacion">Datos de Partidos</label>
+                                    <select name="datos_partido" id="talle">
+                                        <option value="pp"> Por Partido</option>
+                                        <option value="d"> Diario</option>
+                                        <option value="s"> Semanal</option>
                                     </select><br><br>
             
                                     <!-- Botones Radio -->
-                                    <label for="pais"> Goles</label>
-                                    <input type="radio" name="pais" value="Goles">
-                                    <label for="pais"> Expulsiones</label>
-                                    <input type="radio" name="pais" value="Expulsiones">
-                                    <label for="pais"> Figuras</label>
-                                    <input type="radio" name="pais" value="Figuras"><br><br>
+                                    <label for="partido"> Goles</label>
+                                    <input type="radio" name="partido" value="Goles">
+                                    <label for="partido"> Expulsiones</label>
+                                    <input type="radio" name="partido" value="Expulsiones">
+                                    <label for="partido"> Resultado Final</label>
+                                    <input type="radio" name="partido" value="Figuras"><br><br>
                                     <!-- Casillas de chequeo -->
                                     <div class="checkbox">
                                         <input type="checkbox" name="acepta" value="1">
@@ -87,15 +86,14 @@
                                     <!-- Botones -->
                                     <input type="submit" value="Enviar formulario" class="boton_enviar">
                                     <input type="reset" value="Limpiar formulario">
-                                    <input type="button" value="Sin acciones">
                                 </fieldset>
                             </form>
             
                         </section>
                         </div>
                         <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
                         </div>
                     </div>
                     </div>
@@ -105,7 +103,7 @@
           </div>
         </div>
     </nav>
-    <div class="bg-light mt-1 mb-1">
+    <div class="bg-secondary mt-1 mb-1">
       <img src="./img/header_mundial.jpg" alt="" width="100%">
     </div>
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -134,72 +132,72 @@
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="21"  aria-label="Slide 22"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="22"  aria-label="active"></button>
         </div>
-        <div class="carousel-inner">
+        <div class="carousel-inner bg-secondary">
           <div class="carousel-item active" >
-            <center><img src="./img/mundialuruguay30.jpg"  class="d-block w-25" alt="d-block 25" > </center>
+            <center><a title="mundial Uruguay 30" href="https://www.marca.com/reportajes/2010/01/historia_de_los_mundiales/index.html" target="_blank"> <img src="./img/mundialuruguay30.jpg" alt="Mundial Uruguay 30" class="d-block w-25" alt="d-block 25" </a></center>
           </div>
           <div class="carousel-item" >
-            <center><img src="./img/mundialitalia34.jpg"  class="d-block w-25" alt="d-block 25" > </center>
+            <center><a title="mundial Italia 34" href="https://www.marca.com/reportajes/2010/02/italia_1934/index.html" target="_blank"> <img src="./img/mundialitalia34.jpg"  class="d-block w-25" alt="d-block 25" </a></center>
           </div>
           <div class="carousel-item" >
-            <center> <img src="./img/mundialfrancia38.jpg" class="d-block w-25" alt="d-block h-25"> </center>
+            <center><a title="mundial Frania 38" href="https://www.marca.com/reportajes/2010/02/francia_1938/index.html" target="_blank"> <img src="./img/mundialfrancia38.jpg" class="d-block w-25" alt="d-block h-25"> </a></center>
           </div>
           <div class="carousel-item">
-            <center><img src="./img/mundialbrasil50.jpg" class="d-block w-25" alt="d-block 25"> </center>
+            <center><a title="mundial Brasil 50" href="https://www.marca.com/reportajes/2010/02/brasil_1950/index.html" target="_blank"> <img src="./img/mundialbrasil50.jpg" class="d-block w-25" alt="d-block 25"> </a></center>
           </div>
           <div class="carousel-item">
-            <center><img src="./img/mundialsuiza54.jpg" class="d-block w-25" alt="d-block 25"> </center>
+            <center><a title="mundial Suiza 54" href="https://www.marca.com/reportajes/2010/02/suiza_1954/index.html" target="_blank"> <img src="./img/mundialsuiza54.jpg" class="d-block w-25" alt="d-block 25"> </a></center>
           </div>
           <div class="carousel-item">
-            <center><img src="./img/mundialsuecia58.jpg" class="d-block w-25" alt="d-block 25"> </center>
+            <center><a title="mundial Suecia 58" href="https://www.marca.com/reportajes/2010/03/suecia_1958/" target="_blank"> <img src="./img/mundialsuecia58.jpg" class="d-block w-25" alt="d-block 25"> </a></center>
           </div>
           <div class="carousel-item">
-            <center><img src="./img/mundialchile62.jpg" class="d-block w-25" alt="d-block 25"> </center>
+            <center><a title="mundial Chile 62" href="https://www.marca.com/reportajes/2010/03/chile_1962/index.html" target="_blank"> <img src="./img/mundialchile62.jpg" class="d-block w-25" alt="d-block 25"> </a></center>
           </div>
           <div class="carousel-item">
-            <center><img src="./img/mundialinglaterra66.jpg" class="d-block w-25" alt="d-block 25"> </center>
+            <center><a title="mundial Inglaterra 66" href="https://www.marca.com/reportajes/2010/03/inglaterra_1966/index.html" target="_blank"> <img src="./img/mundialinglaterra66.jpg" class="d-block w-25" alt="d-block 25"> </a></center>
           </div>
           <div class="carousel-item">
-            <center><img src="./img/mundialmexico70.jpg" class="d-block w-25" alt="d-block 25"> </center>
+            <center><a title="mundial Mexico 70" href="https://www.marca.com/reportajes/2010/03/mexico_1970/index.html" target="_blank"> <img src="./img/mundialmexico70.jpg" class="d-block w-25" alt="d-block 25"> </a></center>
           </div>
           <div class="carousel-item" >
-            <center><img src="./img/mundialalemania74.jpg"  class="d-block w-25" alt="d-block 25" > </center>
+            <center><a title="mundial Alemania 74" href="https://www.marca.com/reportajes/2010/04/alemania_federal_1974/index.html" target="_blank"> <img src="./img/mundialalemania74.jpg"  class="d-block w-25" alt="d-block 25" > </a></center>
           </div>
           <div class="carousel-item" >
-            <center> <img src="./img/mundialargentina78.jpg" class="d-block w-25" alt="d-block h-25"> </center>
+            <center> <a title="mundial Argentina 78" href="" target="_blank"> <img src="./img/mundialargentina78.jpg" class="d-block w-25" alt="d-block h-25"> </center>
           </div>
           <div class="carousel-item">
-            <center><img src="./img/mundialespaña82.jpg" class="d-block w-25" alt="d-block 25"> </center>
+            <center><a title="mundial España 82" href="" target="_blank"> <img src="./img/mundialespaña82.jpg" class="d-block w-25" alt="d-block 25"> </a></center>
           </div>
           <div class="carousel-item">
-            <center><img src="./img/mundialmexico86.jpg" class="d-block w-25" alt="d-block 25"> </center>
+            <center><a title="mundial Mexico 86" href="https://www.marca.com/reportajes/2010/04/mexico_1986/index.html" target="_blank"> <img src="./img/mundialmexico86.jpg" class="d-block w-25" alt="d-block 25"> </a></center>
           </div>
           <div class="carousel-item">
-            <center><img src="./img/mundialitalia90.jpg" class="d-block w-25" alt="d-block 25"> </center>
+            <center><a title="mundial Italia 90" href="https://www.marca.com/reportajes/2010/04/italia_1990/index.html" target="_blank"> <img src="./img/mundialitalia90.jpg" class="d-block w-25" alt="d-block 25"> </a></center>
           </div>
           <div class="carousel-item">
-            <center><img src="./img/mundialusa94.jpg" class="d-block w-25" alt="d-block 25"> </center>
+            <center><a title="mundial Estados Unidos 94" href="https://www.marca.com/reportajes/2010/05/estados_unidos_1994/" target="_blank"> <img src="./img/mundialusa94.jpg" class="d-block w-25" alt="d-block 25"> </a></center>
           </div>
           <div class="carousel-item">
-            <center><img src="./img/mundialfrancia98.jpg" class="d-block w-25" alt="d-block 25"> </center>
+            <center><a title="mundial Francia 98" href="https://www.marca.com/reportajes/2010/05/francia_1998/" target="_blank"> <img src="./img/mundialfrancia98.jpg" class="d-block w-25" alt="d-block 25"></a> </center>
           </div>
           <div class="carousel-item">
-            <center><img src="./img/mundialjaponcorea2002.jpg" class="d-block w-25" alt="d-block 25"> </center>
+            <center><a title="mundial Japon y Corea" href="https://www.marca.com/reportajes/2010/05/corea_y_japon_2002/" target="_blank"> <img src="./img/mundialjaponcorea2002.jpg" class="d-block w-25" alt="d-block 25"></a> </center>
           </div>
           <div class="carousel-item">
-            <center><img src="./img/mundialalemania2006.jpg" class="d-block w-25" alt="d-block 25"> </center>
+            <center><a title="mundial Alemania 2006" href="https://www.marca.com/reportajes/2010/05/alemania_2006/" target="_blank"> <img src="./img/mundialalemania2006.jpg" class="d-block w-25" alt="d-block 25"></a> </center>
           </div>
           <div class="carousel-item">
-            <center><img src="./img/mundialsudafrica2010.jpg" class="d-block w-25" alt="d-block 25"> </center>
+            <center><a title="mundial Sudafrica 2010" href="https://www.marca.com/reportajes/2014/05/sudafrica_2010/index.html" target="_blank"> <img src="./img/mundialsudafrica2010.jpg" class="d-block w-25" alt="d-block 25"> </a></center>
           </div>
           <div class="carousel-item">
-            <center><img src="./img/mundialbrasil2014.jpg" class="d-block w-25" alt="d-block 25"> </center>
+            <center><a title="mundial Brasil 2014" href="https://www.marca.com/deporte/futbol/mundial/resultados/fase-final.html" target="_blank"> <img src="./img/mundialbrasil2014.jpg" class="d-block w-25" alt="d-block 25"></a> </center>
           </div>
           <div class="carousel-item">
-            <center><img src="./img/mundialrusia2018.jpg" class="d-block w-25" alt="d-block 25"> </center>
+            <center><a title="mundial Rusia 2018" href="https://www.fifa.com/es/tournaments/mens/worldcup/2018russia" target="_blank"> <img src="./img/mundialrusia2018.jpg" class="d-block w-25" alt="d-block 25"> </a></center>
           </div>
           <div class="carousel-item">
-            <center><img src="./img/mundialQATAR-2022.jpg" class="d-block w-25" alt="d-block 25"> </center>
+            <center><a title="mundial Qatar 2022" href="./mundialqatarfixture.html" target="_blank"> <img src="./img/mundialQATAR-2022.jpg" class="d-block w-25" alt="d-block 25"> </a></center>
           </div>
         <div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -218,7 +216,7 @@
   
   <fieldset class="field1" >
     <legend>El Mundial comienza en:</legend>
-    <section id="cuentaregresiva" class="border">
+    <section id="cuentaregresiva" class="border" class="bg-secondary">
         <script src="./js/simplyCountdown.min.js"></script>
         <script src="./js/cuentaregresiva.js"></script>
     </section>
