@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./estilo.css">
+    <title>Musica de mundiales</title>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid ">
+            <a class="navbar-brand text-light" href="./index.html">Mundial Qatar 2022</a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link active text-light text-center" aria-current="page"
+                            href="./gruposmundial.html">Grupos Mundial Qatar 22</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light text-center" href="./mundiales.html">mundiales tabla</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light text-center" href="./mascotasmundial.html">Mascotas de
+                            mundiales</a>
+                    </li>
+                    <li class="nav-item">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" class="text-center">
+                            Newletter Mundial
+                            <!-- baja logo
+                      <span class="iconAuthContainer">
+                        <img src="./img/wordcup.svg" alt="icono de la copa del mundo">
+                    </span>-->
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="exampleModalLabel" width="100%"> Noticias del
+                                            Mundial</h3>
+                                        <!--<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+                                    </div>
+                                    <div class="modal-body">
+                                        <section class="formulario_sec">
+                                            <form action="https://formspree.io/f/xaykqlyr" method="post">
+                                                <fieldset class="field">
+                                                    <label for="nombre"> Nombre</label><br>
+                                                    <input type="text" name="nombre" id="nombre"
+                                                        placeholder="ingresa tu nombre"><br>
+                                                    <label for="correo"> Correo electrónico</label><br>
+                                                    <input type="email" name="correo" id="correo"
+                                                        placeholder="Ingresa tu email"><br>
+                                                    <label for="clave"> Contraseña</label><br>
+                                                    <input type="password" name="clave" id="clave"
+                                                        placeholder="ingresa tu contraseña"><br>
+                                                    <label for="fecha"> Fecha de nacimiento</label><br>
+                                                    <input type="date" name="fecha" required> <br>
+                                                    <label for="mensaje"> Escribi tu comentario</label><br>
+                                                    <textarea name="mensaje" id="mensaje" cols="20" rows="5"
+                                                        minlength="2" maxlength="40"></textarea><br>
+
+                                                    <!-- Menu desplegable -->
+                                                    <label for="notificacion">Datos de Partidos</label>
+                                                    <select name="datos_partido" id="talle">
+                                                        <option value="pp"> Por Partido</option>
+                                                        <option value="d"> Diario</option>
+                                                        <option value="s"> Semanal</option>
+                                                    </select><br><br>
+
+                                                    <!-- Botones Radio -->
+                                                    <label for="partido"> Goles</label>
+                                                    <input type="radio" name="partido" value="Goles">
+                                                    <label for="partido"> Expulsiones</label>
+                                                    <input type="radio" name="partido" value="Expulsiones">
+                                                    <label for="partido"> Resultado Final</label>
+                                                    <input type="radio" name="partido" value="Figuras"><br><br>
+                                                    <!-- Casillas de chequeo -->
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" name="acepta" value="1">
+                                                        <label> Acepta los términos y condiciones</label>
+                                                    </div><br>
+                                                    <!-- Botones -->
+                                                    <input type="submit" value="Enviar formulario" class="boton_enviar">
+                                                    <input type="reset" value="Limpiar formulario">
+                                                </fieldset>
+                                            </form>
+
+                                        </section>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cancelar</button>
+                                        <button type="button" class="btn btn-primary">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="contenedor_mundiales">
+        <!-- Contenido -->
+        <section class="contenido">
+            <center>
+                <h2> Mundiales </h2>
+            
+            <div class="contenido__personajes">
+
+                <div class="contenido__imagen_mundiales">
+                    <h3>Mundial Chile 62</h3>
+                    <img src="./img/mundialchile62.jpg" alt="Imagen Mundial Chile 62">
+                </div>
+                <div class="contenido__imagen_mundiales">
+                    <h3>Mundial Inglaterra 66</h3>
+                    <img src="./img/mundialinglaterra66.jpg" alt="Imagen Mundial Inglaterra 66">
+                </div>
+
+                <div class="contenido__imagen_mundiales">
+                    <h3>Mundial Mexico 70</h3>
+                    <img src="./img/mundialmexico70.jpg" alt="Imagen Mundial Mexico 70">
+                </div>
+
+                <div class="contenido__imagen_mundiales">
+                    <h3>Mundial Alemania 74</h3>
+                    <img src="./img/mundialalemania74.jpg" alt="Imagen Mundial Alemania 74">
+                </div>
+                <div class="contenido__imagen_mundiales">
+                    <h3>Mundial Argentina 78</h3>
+                    <img src="./img/mundialargentina78.jpg" alt="Imagen Mundial Argentina 78">
+                </div>
+                <div class="contenido__imagen_mundiales">
+                    <h3>Mundial España 82</h3>
+                    <img src="./img/mundialespaña82.jpg" alt="Imagen Mundial España 82">
+                </div>
+
+                <div class="contenido__imagen_mundiales">
+                    <h3>Mundial Mexico 86</h3>
+                    <img src="./img/mundialmexico86.jpg" alt="Imagen Mundial Mexico 86">
+                </div>
+
+                <div class="contenido__imagen_mundiales">
+                    <h3>Mundial Italia 90</h3>
+                    <img src="./img/mundialitalia90.jpg" alt="Imagen Mundial Italia 90">
+                </div>
+                <div class="contenido__imagen_mundiales">
+                    <h3>Mundial USA 94</h3>
+                    <img src="./img/mundialusa94.jpg" alt="Imagen Mundial USA 94">
+                </div>
+                <div class="contenido__imagen_mundiales">
+                    <h3>Mundial Francia 98</h3>
+                    <img src="./img/mundialfrancia98.jpg" alt="Imagen Mundial Francia 98">
+                </div>
+
+                <div class="contenido__imagen_mundiales">
+                    <h3>Mundial Japon Corea 2002</h3>
+                    <img src="./img/mundialjaponcorea2002.jpg" alt="Imagen Mundial Japon Corea 2002">
+                </div>
+
+                <div class="contenido__imagen_mundiales">
+                    <h3>Mundial Alemania 2006</h3>
+                    <img src="./img/mundialalemania2006.jpg" alt="Imagen Mundial Alemania 2006">
+                </div>
+                <div class="contenido__imagen_mundiales">
+                    <h3>Mundial Sudafrica 2010</h3>
+                    <img src="./img/mundialsudafrica2010.jpg" alt="Imagen Mundial Sudafrica 2010">
+                </div>
+                <div class="contenido__imagen_mundiales">
+                    <h3>Mundial Brasil 2014</h3>
+                    <img src="./img/mundialbrasil2014.jpg" alt="Imagen Mundial Brasil 2014">
+                </div>
+
+                <div class="contenido__imagen_mundiales">
+                    <h3>Mundial Rusia 2018</h3>
+                    <img src="./img/mundialrusia2018.jpg" alt="Imagen Mundial Rusia 2018">
+                </div>
+
+                <div class="contenido__imagen_mundiales">
+                    <h3>Mundial Qatar 2022</h3>
+                    <img src="./img/mundialQATAR-2022.jpg" alt="Imagen Mundial Qatar 2022">
+                </div>
+            
+        </section>
+
+        <section class="contenido">
+            <center>
+                <h2> Resumen </h2>
+            </center>
+            <center>
+                <div class="contenido_video">
+                    <iframe src="https://www.youtube.com/embed/e_yafwjcf-w"
+                        title="THE RAMBLERS - EL ROCK DEL MUNDIAL  (HD)" frameborder="2"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="contenido_video">
+                    <iframe src="https://www.youtube.com/embed/mzaMjM4Ra7o" title="World Cup Willie England 66 Song"
+                        frameborder="2"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="contenido_video">
+                    <iframe src="https://www.youtube.com/embed/GCo2p4P52mQ" title="Fútbol México 70 (Song)"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="contenido_video">
+                    <iframe src="https://www.youtube.com/embed/DGSQGPZRlwY"
+                        title="CANCIÓN DE ALEMANIA 74 Fußball ist unser Leben - Fußballnationalmannschaft WM 74"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="contenido_video">
+                    <iframe src="https://www.youtube.com/embed/0C_GT6RGShM"
+                        title="La marcha del mundial - Canción del mundial Argentina 1978" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="contenido_video">
+                    <iframe src="https://www.youtube.com/embed/hbWYeC9L8TU" title="Canción de España82" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="contenido_video">
+                    <iframe src="https://www.youtube.com/embed/RwfLtnsgrJI"
+                        title="El mundo unido por un balón (Official song Mexico 86)" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="contenido_video">
+                    <iframe src="https://www.youtube.com/embed/dTbMwJMqilI"
+                        title="Un Estate Italiana - Gianna Nannini & Edoardo Bennato" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="contenido_video">
+                    <iframe src="https://www.youtube.com/embed/9lyNR0UMVic" title="Gloryland 1994 World Cup﻿ Song"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="contenido_video">
+                    <iframe src="https://www.youtube.com/embed/tF_ggG5dY5U"
+                        title="La Copa De La Vida (La Canción Oficial De La Copa Mundial, Francia '98) Spanish (Video ..."
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="contenido_video">
+                    <iframe src="https://www.youtube.com/embed/G3qkyftTagk"
+                        title="Anastacia - Boom | FIFA World Cup 2002 (Official Video)" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="contenido_video">
+                    <iframe src="https://www.youtube.com/embed/4aOxDHqWyK0"
+                        title="The Time of Our Lives (The Official Song of the 2006 FIFA World Cup Germany) (Global / ..."
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="contenido_video">
+                    <iframe src="https://www.youtube.com/embed/pRpeEdMmmQ0"
+                        title="Shakira - Waka Waka (This Time for Africa) (The Official 2010 FIFA World Cup™ Song)"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="contenido_video">
+                    <iframe src="https://www.youtube.com/embed/TGtWWb9emYI"
+                        title="We Are One (Ole Ola) [The Official 2014 FIFA World Cup Song] (Olodum Mix)"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="contenido_video">
+                    <iframe src="https://www.youtube.com/embed/kFMZUxX6K6o"
+                        title="Live It Up - Nicky Jam feat. Will Smith & Era Istrefi (2018 FIFA World Cup Russia) (Official Audio)"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="contenido_video">
+                    <iframe src="https://www.youtube.com/embed/vyDjFVZgJoo"
+                        title="Hayya Hayya (Better Together) | FIFA World Cup 2022™ Official Soundtrack" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </center>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>

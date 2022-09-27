@@ -81,35 +81,30 @@ font-size: 20px;
     padding: 1rem;
     width: 50%;
 }
-.contenido_texto{
-    background-color: rgb(44, 128, 153);
-    width: 80%;
-}
 .contenido__personajes{
-    padding: 1rem;
-    align-items: baseline;
+    padding: 10px;
     text-align: center;
 }
 
-.contenido__texto{
-    padding: 1rem;
-    align-items: center;
+/*.contenido__video{
+    background-color: rgb(44, 128, 153);
+}*/
+
+.contenido_video{
     text-align: center;
-    padding-top: 30px;
+    margin: 200px 0 200px 0;
+    width: 100%;
 }
+
 .contenedor_mundiales{
     display: flex;
     border: solid 1px ;
     background-color: chartreuse;
-    
 }
 .contenido__imagen_mundiales{
-    background-color: aqua;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-   /* display: inline-block; */
-    margin: 0 20px 0 60px;
+    background-color: rgb(51, 202, 207);
+    width: 40%;
+    margin: 10px 20px 40px 20px;
 }
 .contenido_texto_mundial{
     width: 90%;
@@ -188,6 +183,7 @@ font-size: 20px;
     }
     
     /* Pseudoclases */
+    
     a:hover{  background-color:blue; color:white; text-decoration:underline; }
     a:link{ text-decoration:none; color:red; }
     a:visited{ color:#999999; }
@@ -197,6 +193,12 @@ font-size: 20px;
 @media(max-width:769px){
     /*footer{
         display:none;*/
+        .contenido__imagen_mundiales h3{
+            font-size: small;
+        }
+        .contenido_video{
+            margin: 75px 0 75px 0;
+        }
 }
 
 /* TABLETAS */
@@ -204,18 +206,22 @@ font-size: 20px;
     body{
         background-color: cadetblue;
     }
+    .contenido_video{
+        margin: 100px 0 100px 0;
+    }
     .encabezado{
         display: flex;
         flex-wrap: wrap;
         background-color: rgb(225, 186, 135);
     }
     .contenido__imagen_mundiales div{
-        width: 30%;
+        width: 50%;
         background-color: brown;
     }
+    
     .contenido__imagen_mundiales img{
-        width: 90%;
-        background-color: darkcyan;
+        width: 50%;
+        background-color: rgb(83, 182, 182);
     }
     .comunidad{
         display: flex;
@@ -223,7 +229,6 @@ font-size: 20px;
     .agregado{
         display: block;
     }
-
 
 }
 
